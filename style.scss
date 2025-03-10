@@ -168,4 +168,16 @@ body{
             }
         }
     }
+    .mainboard{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        h1{
+            text-align: center;
+            font-weight: bold;
+        }
+        img{
+            object-fit:contain;
+            height: 600px;
+        }
+    }
 }

@@ -168,4 +168,17 @@ body {
 .container .mail .right a img {
   border-radius: 10px;
   background-color: blueviolet;
+}
+.container .mainboard {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.container .mainboard h1 {
+  text-align: center;
+  font-weight: bold;
+}
+.container .mainboard img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 600px;
 }/*# sourceMappingURL=style.css.map */
