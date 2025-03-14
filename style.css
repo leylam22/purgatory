@@ -226,4 +226,19 @@ body {
 }
 .container .playerboard .right {
   width: 50%;
+}
+.container .scales {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .scales .left {
+  width: 27%;
+}
+.container .scales .gif {
+  width: 50%;
+}
+.container .scales .right {
+  width: 27%;
 }/*# sourceMappingURL=style.css.map */
