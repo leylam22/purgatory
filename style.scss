@@ -1,17 +1,21 @@
 *{
     box-sizing: border-box;
-    background-color: black;
+    // background-color: black;
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: bradley hand, cursive;
     color: #fff;
+    text-transform: uppercase;
 }
 ::-webkit-scrollbar {
     display: none;
 }
 body{
-    background-color: #000000 !important;
+    // background-color: #000000 !important;
+    background-image: url("/images/background6.png");
+    background-size: cover;
+    // background-position:center;
 }
 .container{
     .first{
@@ -90,11 +94,15 @@ body{
     }
     .mail{
         display: flex;
+        @media (max-width: 1024px) {
+            
+            flex-wrap: wrap;
+        }
         align-items: center;
         justify-content: center;
         gap: 50px;
-        height: 250px;
         padding: 20px;
+        width: 100%;
         .container{
             position: relative;
             .back{
@@ -184,8 +192,8 @@ body{
         }
     }
     .mainboard{
-        margin-top: 50px;
-        margin-bottom: 50px;
+        // margin-top: 50px;
+        // margin-bottom: 50px;
         h1{
             text-align: center;
             font-weight: bold;
@@ -241,12 +249,14 @@ body{
             width: 27%;
         }
     }
+    .slowpuzzle{
+        height: 700px;
+    }
     .section7{
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 5%;
-        height: 500px;
         width: 100%;
         margin-bottom: 50px;
         .left{
@@ -271,7 +281,6 @@ body{
         margin-bottom: 50px;
         gap: 5%;
         .right{
-            height: 600px;
             display: flex;
             align-items: center;
             text-align: center;
@@ -284,7 +293,6 @@ body{
         align-items: center;
         justify-content: center;
         gap: 5%;
-        height: 500px;
         margin-bottom: 50px;
         .middle{
             display: flex;
@@ -299,5 +307,22 @@ body{
                 color: red;
             }
         }
+    }
+}
+@media (max-width: 768px) {
+    .first img {
+        width: 100px;
+    }
+    .title {
+        font-size: 16px;
+    }
+    .mail input, .mail button {
+        width: 100%;
+    }
+    .playerboard ul li {
+        font-size: 20px;
+    }
+    .section7 h1, .section8 h1, .section9 h3 {
+        font-size: 24px;
     }
 }

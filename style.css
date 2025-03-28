@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
-  background-color: black;
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: bradley hand, cursive;
   color: #fff;
+  text-transform: uppercase;
 }
 
 ::-webkit-scrollbar {
@@ -13,7 +13,8 @@
 }
 
 body {
-  background-color: #000000 !important;
+  background-image: url("/images/background6.png");
+  background-size: cover;
 }
 
 .container .first {
@@ -93,8 +94,13 @@ body {
   align-items: center;
   justify-content: center;
   gap: 50px;
-  height: 250px;
   padding: 20px;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .container .mail {
+    flex-wrap: wrap;
+  }
 }
 .container .mail .container {
   position: relative;
@@ -183,10 +189,6 @@ body {
   border-radius: 10px;
   background-color: blueviolet;
 }
-.container .mainboard {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
 .container .mainboard h1 {
   text-align: center;
   font-weight: bold;
@@ -242,12 +244,14 @@ body {
 .container .scales .right {
   width: 27%;
 }
+.container .slowpuzzle {
+  height: 700px;
+}
 .container .section7 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5%;
-  height: 500px;
   width: 100%;
   margin-bottom: 50px;
 }
@@ -272,7 +276,6 @@ body {
   gap: 5%;
 }
 .container .section8 .right {
-  height: 600px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -284,7 +287,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 5%;
-  height: 500px;
   margin-bottom: 50px;
 }
 .container .section9 .middle {
@@ -299,4 +301,22 @@ body {
   font-size: 50px;
   font-weight: bold;
   color: red;
+}
+
+@media (max-width: 768px) {
+  .first img {
+    width: 100px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .mail input, .mail button {
+    width: 100%;
+  }
+  .playerboard ul li {
+    font-size: 20px;
+  }
+  .section7 h1, .section8 h1, .section9 h3 {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */
