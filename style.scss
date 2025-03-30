@@ -13,7 +13,7 @@
 }
 body{
     // background-color: #000000 !important;
-    background-image: url("/images/background7.png");
+    background-image: url("/images/background9.png");
     background-size: cover;
     // background-position:center;
 }
@@ -25,6 +25,24 @@ body{
         justify-content: space-between;
         width: 100%;
         height: 400px;
+        .left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 250px;
+                object-fit: cover;
+            }
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 250px;
+                object-fit: cover;
+            }
+        }
         @media (max-width:770px) {
             height: 150px;
             .name{
