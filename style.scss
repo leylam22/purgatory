@@ -16,6 +16,15 @@ body{
     background-image: url("/images/background9.png");
     background-size: cover;
     // background-position:center;
+    @media (min-width: 601px) and (max-width: 1024px) {
+        background-image: url("/images/TabletTest2.png");
+        background-color: #219961;
+        background-size: cover;
+    }
+    @media (max-width:768px) {
+        background-image: url("/images/MobileTest2.png");
+        background-size: cover;
+    }
 }
 .container{
     width: 100%;
@@ -266,6 +275,12 @@ body{
     }
     .slowpuzzle{
         height: 700px;
+        @media (max-width:1024) {
+            height: 500px;
+        }
+        @media (max-width:768px) {
+            height: 200px;
+        }
     }
     .section7{
         display: flex;
