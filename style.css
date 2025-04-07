@@ -18,14 +18,14 @@ body {
 }
 @media (min-width: 601px) and (max-width: 1024px) {
   body {
-    background-image: url("/images/TabletTest2.png");
+    background-image: url("/images/TabletTest3.png");
     background-color: #219961;
     background-size: cover;
   }
 }
 @media (max-width: 768px) {
   body {
-    background-image: url("/images/MobileTest2.png");
+    background-image: url("/images/MobileTest6.png");
     background-size: cover;
   }
 }
@@ -136,6 +136,11 @@ body {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 767px) {
+  .container .mail h2 {
+    font-size: 19px;
+  }
+}
 .container .mail .container {
   position: relative;
 }
@@ -201,7 +206,7 @@ body {
 }
 .container .mail .left button {
   width: 70%;
-  background-color: blueviolet;
+  background-color: rgb(52, 233, 52);
   font-weight: bold;
 }
 .container .mail .right {
@@ -223,11 +228,15 @@ body {
 }
 .container .mail .right a img {
   border-radius: 10px;
-  background-color: rgb(24, 149, 32);
 }
 .container .mainboard h1 {
   text-align: center;
   font-weight: bold;
+}
+@media (max-width: 767px) {
+  .container .mainboard h1 {
+    font-size: 22px;
+  }
 }
 .container .mainboard img {
   -o-object-fit: contain;
@@ -246,6 +255,11 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+@media (max-width: 767px) {
+  .container .playerboard {
+    height: 250px;
+  }
+}
 .container .playerboard .left {
   width: 50%;
   display: flex;
@@ -258,10 +272,17 @@ body {
   color: blueviolet;
   font-weight: bold;
   font-size: clamp(24px, 4vw, 40px);
+  white-space: nowrap;
 }
 .container .playerboard .left ul li {
   font-size: clamp(18px, 3vw, 27px);
   letter-spacing: 1.5px;
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  .container .playerboard .left ul li {
+    font-size: 14px;
+  }
 }
 .container .playerboard .right {
   width: 50%;
@@ -281,17 +302,17 @@ body {
 .container .scales .right {
   width: 27%;
 }
-.container .slowpuzzle {
+.container .solvepuzzle {
   height: 700px;
 }
-@media (max-width: 1024) {
-  .container .slowpuzzle {
-    height: 500px;
+@media (max-width: 768px) {
+  .container .solvepuzzle {
+    height: 230px;
   }
 }
-@media (max-width: 768px) {
-  .container .slowpuzzle {
-    height: 200px;
+@media (max-width: 1024px) and (min-width: 768px) {
+  .container .solvepuzzle {
+    height: 400px !important;
   }
 }
 .container .section7 {
@@ -311,6 +332,16 @@ body {
   letter-spacing: 2px;
   justify-content: center;
 }
+.container .section7 .left h1 {
+  padding-top: 80px;
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  .container .section7 .left h1 {
+    padding-top: 50px;
+    font-size: 16px;
+  }
+}
 .container .section7 .right img {
   -o-object-fit: contain;
      object-fit: contain;
@@ -328,6 +359,15 @@ body {
   text-align: center;
   letter-spacing: 2px;
   justify-content: center;
+}
+.container .section8 .right h1 {
+  padding-top: 115px;
+}
+@media (max-width: 767px) {
+  .container .section8 .right h1 {
+    padding-top: 50px;
+    font-size: 20px;
+  }
 }
 .container .section9 {
   display: flex;
@@ -348,6 +388,11 @@ body {
   font-size: 50px;
   font-weight: bold;
   color: red;
+}
+@media (max-width: 768px) {
+  .container .section9 .middle h3 {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 768px) {

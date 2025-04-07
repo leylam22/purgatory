@@ -12,17 +12,15 @@
     display: none;
 }
 body{
-    // background-color: #000000 !important;
     background-image: url("/images/background9.png");
     background-size: cover;
-    // background-position:center;
     @media (min-width: 601px) and (max-width: 1024px) {
-        background-image: url("/images/TabletTest2.png");
+        background-image: url("/images/TabletTest3.png");
         background-color: #219961;
         background-size: cover;
     }
     @media (max-width:768px) {
-        background-image: url("/images/MobileTest2.png");
+        background-image: url("/images/MobileTest6.png");
         background-size: cover;
     }
 }
@@ -123,6 +121,11 @@ body{
             
             flex-wrap: wrap;
         }
+        @media (max-width:767px) {
+            h2{
+                font-size: 19px;
+            }
+        }
         align-items: center;
         justify-content: center;
         gap: 50px;
@@ -190,7 +193,7 @@ body{
             }
             button{
                 width: 70%;
-                background-color: blueviolet;
+                background-color: rgb(52, 233, 52);
                 font-weight: bold;
             }
         }
@@ -211,7 +214,6 @@ body{
                 width: 30%;
                 img{
                     border-radius: 10px;
-                    background-color: rgb(24, 149, 32);
                 }
             }
         }
@@ -220,6 +222,9 @@ body{
         h1{
             text-align: center;
             font-weight: bold;
+            @media (max-width:767px) {
+                font-size: 22px;
+            }
         }
         img{
             object-fit:contain;
@@ -235,6 +240,9 @@ body{
         height: 500px;
         align-items: center;
         justify-content: space-around;
+        @media (max-width:767px) {
+            height: 250px;
+        }
         .left{
             width: 50%;
             display: flex;
@@ -246,11 +254,16 @@ body{
                 color: blueviolet;
                 font-weight: bold;
                 font-size: clamp(24px, 4vw, 40px);
+                white-space: nowrap;
             }
             ul{
                 li{
                     font-size: clamp(18px, 3vw, 27px);
                     letter-spacing: 1.5px;
+                    white-space: nowrap;
+                    @media (max-width:767px){
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -273,13 +286,13 @@ body{
             width: 27%;
         }
     }
-    .slowpuzzle{
+    .solvepuzzle{
         height: 700px;
-        @media (max-width:1024) {
-            height: 500px;
-        }
         @media (max-width:768px) {
-            height: 200px;
+            height: 230px;
+        }
+        @media (max-width:1024px) and (min-width: 768px) {
+            height: 400px !important; 
         }
     }
     .section7{
@@ -297,6 +310,14 @@ body{
             text-align: center;
             letter-spacing: 2px;
             justify-content: center;
+            h1{
+                padding-top: 80px;
+                white-space: nowrap;
+                @media (max-width:767px) {
+                    padding-top: 50px;
+                    font-size: 16px;
+                }
+            }
         }
         .right{
             img{
@@ -316,6 +337,13 @@ body{
             text-align: center;
             letter-spacing: 2px;
             justify-content: center;
+            h1{
+                padding-top: 115px;
+                @media (max-width:767px) {
+                    padding-top: 50px;
+                    font-size: 20px;
+                }
+            }
         }
     }
     .section9{
@@ -335,6 +363,9 @@ body{
                 font-size: 50px;
                 font-weight: bold;
                 color: red;
+                @media (max-width:768px) {
+                    font-size: 30px;
+                }
             }
         }
     }
