@@ -25,7 +25,7 @@ body {
 }
 @media (max-width: 768px) {
   body {
-    background-image: url("/images/MobileTest6.png");
+    background-image: url("/images/MobileTest8.png");
     background-size: cover;
   }
 }
@@ -68,10 +68,10 @@ body {
     width: 200px;
   }
   .container .first .left img {
-    width: 100px;
+    width: 90px;
   }
   .container .first .right img {
-    width: 100px;
+    width: 90px;
   }
 }
 .container .title {
