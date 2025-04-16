@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const email = emailInput.value;
   
       try {
-        const response = await fetch('https://localhost:5123/api/EmailSubscription', {
+        const response = await fetch('https://localhost:7237/api/EmailSubscription', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
